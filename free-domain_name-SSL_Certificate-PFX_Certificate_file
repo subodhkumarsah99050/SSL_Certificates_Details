@@ -1,0 +1,65 @@
+Step-01:
+Register a domain from freenome. 
+Login in mentioned URl from your login credentials.
+Here is link: https://my.freenom.com/
+
+Step-02: Register a domain with free nameserver.
+nameserver e.g: .tk, ga etc.
+
+Your domain name: abc-test.tk
+
+step-03: Generate SSL certificate for this domain.
+Login in mentioned URL.
+Here is the link: https://www.sslforfree.com/
+
+Step-04:
+Click on create SSL.
+Then click on "new certificate" > "Enter Domain" > check on "90-Day Certificate" > click on "next" > click on "next" > 
+In Domain verification section select "DNS(CNAME)" > Copy "name" expact domain name and "Point To"
+e.g:
+Name: _CD8ACBBCFC89647BBFB134F852DB8597.abc-test.tk
+Copy only: _CD8ACBBCFC89647BBFB134F852DB8597
+
+Point To:
+9315C4378F589C6BB3FAF1CE054E857D.27712FCE4360D831E99BE56D1054A32E.5f146d558b320ce.comodoca.com
+
+Step-05: Login in the freenom. 
+Click on "Service" > "My domain" > click on "manage domain" on your domain > "Manage Freenom DNS" > 
+In "modify record" click on "name" section and mention your name.
+And in "Target" section provide "Point To" details which we have copied in step-04.
+After providing "name" and "Target" save it.
+e.g:
+Name: _CD8ACBBCFC89647BBFB134F852DB8597
+Target: 9315C4378F589C6BB3FAF1CE054E857D.27712FCE4360D831E99BE56D1054A32E.5f146d558b320ce.comodoca.com
+
+Step-06:
+Go to the below link.
+Here is link: https://www.whatsmydns.net/
+Paste "_CD8ACBBCFC89647BBFB134F852DB8597.abc-test.tk"
+Select "CNAME" then click on search
+Note: It will take little time for propagation.
+Through this process our Domain name will be verified.
+
+Step-07: 
+Now go to the "SSLforFree" link.
+Click on "Next" and download certificate.
+
+Step-08:
+Convert your certificate into pfx file.
+
+Go to the mentioned link.
+Here is the link: https://www.sslshopper.com/ssl-converter.html
+
+Select "Type To Convert To" --> PFX
+Upload certificate files according to provided list.
+
+Certificate File to Convert: Upload here certificate file, file name "certificate.crt".
+Private Key File: Upload here private key file, file name "private.key".
+Chain Certificate File (optional): Upload here chain file, file name "ca_bundle.crt".
+
+After uploading all 3 files. Provide password in "PFX Password" section.
+Note: Anything you can provide in password section.
+
+After proving password click on "convert certificate"
+
+It will provide us pfx file.
